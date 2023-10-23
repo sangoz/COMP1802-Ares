@@ -1,0 +1,361 @@
+/* ................phần 1 các thanh công cụ của web bán hàng............. */
+.modau {
+    background-image: linear-gradient(0,#e08676,#ff5324);/*đây là cú pháp chuyển màu c*/
+    position: fixed;/*là thuộc tính giúp đứng yên một vị trí ngay cả khi bị cuộn trang*/
+    right: 0px;
+    left: 0px;
+    display: block;
+    z-index: 999;
+}
+.abc{
+    list-style: none;/*cú pháp để không có dấu chấm trước chữ khi dùng thẻ li */
+}
+nav{
+    display: flex;/*cú pháp để các chữ nằm trên cùng một hàng*/
+}
+.modau-tien{
+    justify-content: space-between; /*cú pháp để hai đầu cách xa nhau */
+    align-items: center;
+}
+.modau-tien{
+    padding: 16px 0px;
+}
+nav ul .a,a{/*cách gọi tên đến từng muc của chữ*/
+    display: inline-block;/**/
+    margin:auto 5px;
+    color: var(--white-black);
+    text-decoration: none;/*đây là thuộc tính làm mất gạch chân của thẻ*/
+}
+.a--strong{/*cú pháp css vào phần đăng nhập và đăng kí*/
+    font-weight: 700;/*cú pháp cho kieur chữ đậm*/
+}
+div nav ul:nth-child(2) li:nth-child(1) input:hover{
+    background-color: rgb(92, 89, 89);
+}
+div nav ul li.a :hover{/*thẻ hover là làm đổi màu chữ khi đưa chuột vào vị trí chữ*/
+    color: rgb(241, 238, 238);
+}
+div nav ul:nth-child(2) li:nth-child(1) input{/*thẻ :nth:child(x) là di chuyển đến phần tử x*/
+    height: 30px;
+    width: 200px;
+    border-radius: 7px;/*tạo viền hình bo tròn cho các hình khối*/
+    border: none;
+}
+div nav ul:nth-child(2) li:nth-child(1) i{
+    position: absolute;/*dùng để định vị một phần tử tương đối với vị trí của phần tử cha của nó*/
+    font-size: 20px;
+    display: inline-block;
+    transform: translate(-150%,25%);
+    color: black;
+} 
+div nav ul:nth-child(2) li:nth-child(2) button{
+    border-radius: 5px;
+    border: none;
+}
+div nav ul:nth-child(2) li:nth-child(2) button:hover {
+    background-color: rgb(51, 50, 50);
+}
+
+/* ....................phần 2 dòng sản phẩm của web bán hàng..................... */
+/* ....................phần 2 dòng sản phẩm của web bán hàng..................... */
+/* ....................phần 2 dòng sản phẩm của web bán hàng..................... */
+/* ....................phần 2 dòng sản phẩm của web bán hàng..................... */
+/* ....................phần 2 dòng sản phẩm của web bán hàng..................... */
+.computer{
+    margin-top: 62px;
+    position: fixed;
+    background-color: #eee23a;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    z-index: 998;
+}
+.computer-menu-anh{
+    justify-content: center;  
+    align-items: center;
+}
+.computer-computer-nap{
+    display: flex;
+    list-style: none;
+}
+.computer-menu-anh ul li{
+    padding: 10px 0px;
+    transition: all 0.4s ease;/* là thuộc tính dùng để điều khiển tốc độ của hiệu ứng*/
+}
+.computer-menu-anh ul li a{
+    margin: 0px 20px; 
+}
+.computer-menu-anh ul li{
+    border-radius: 7px;
+}
+.computer-menu-anh ul li:hover{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+}
+.computer-htd-dtqa{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 0px;
+    top: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    z-index: 999;
+    display: none;/*thuộc tính giúp ẩn một phần tử khỏi mà hình và phần tử đó vẫn tồn tại trong HTML*/
+}
+.computer-htd-dtqa-hdm{
+    width: 400px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    z-index: 999;
+}
+.computer-htd-dtqa-hdm h2{
+    display: block;
+    font-size: 14px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #000;
+}
+.computer-htd-dtqa-hdm form{
+    padding:0px 20px;
+}
+.computer-htd-dtqa-hdm h2 span{
+    display: block;
+    position: absolute; 
+    border: 1px solid #000;
+    border-radius: 3px;
+    cursor: pointer;/*là khi di chuyển vào thì con chuột sẽ chuyển thành con trỏ*/
+    transform: translate(750%,-100%);
+}
+.computer-htd-dtqa-hdm h2 span:hover{
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+}
+.computer-htd-dtqa-hdm form input,select{
+    height: 30px;
+    display: block;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.computer-htd-dtqa-hdm form button{
+    height: 30px;
+    width: 80%;
+    background-color: #ff5324;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+}
+.computer-htd-dtqa-hdm form button:hover{
+    color: #ffffff;
+}
+/*..................phần ẩn hiện menu con khi đưa chuột vào................. */
+/*..................phần ẩn hiện menu con khi đưa chuột vào................. */
+/*..................phần ẩn hiện menu con khi đưa chuột vào................. */
+/*..................phần ẩn hiện menu con khi đưa chuột vào................. */
+/*..................phần ẩn hiện menu con khi đưa chuột vào................. */
+.computer-menu-anh{
+    position: relative;/*là xác định vị trí của một phần tử so với phần tử ban đầu :di chuyển đến một vị trí mới nhưng không ảnh hưởng tới các vị trí khác xung quanh nó */
+}
+.maytinh-com{
+    position: absolute;
+    background-color: #eeeded;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0%);
+    top: 100%;
+    padding: 2px;
+    border-radius: 10px;
+    display: none;/*ẩn menu con*/
+}
+.maytinh-com ul{
+    list-style: none;
+    text-align: left;/*chi kiểu chữ nằm sát bên trái của lề*/
+}
+.maytinh-com ul li a:hover{
+    color: #ff0000;
+}
+.maytinh-com ul li{
+    border-radius: 8px;
+}
+.computer-menu nav ul li:hover .maytinh-com{/*khi di chuột vào thẻ li thì các phần tử trong thẻ div hiện lên*/
+    display: block;/*hiện menu con khi di chuột vào*/
+}
+.phone-ip{
+    position: absolute;
+    background-color: #eeeded;
+    align-items: center;
+    justify-content: center;
+    top: 100%;
+    transform: translateX(0%);
+    border-radius: 10px;
+    padding: 2px;
+    display: none;
+}
+.phone-ip ul li{
+    border-radius: 8px;
+}
+.phone-ip ul li a:hover{
+    color: #ff0000;
+}
+.phone-ip ul{
+    list-style: none;
+    text-align: left;
+}
+.computer-menu nav ul li:hover .phone-ip{
+    display: block;
+}
+.tv-sony{
+    position: absolute;
+    background-color: #eeeded;
+    align-items: center;
+    justify-content: center;
+    top: 100%;
+    transform: translateX(0%);
+    padding: 2px;
+    border-radius: 10px;
+    display: none;
+}
+.tv-sony ul li{
+    border-radius: 8px;
+}
+.tv-sony ul li a:hover{
+    color: #ff0000;
+}
+.tv-sony ul{
+    list-style: none;
+    text-align: left;
+}
+.computer-menu nav ul li:hover .tv-sony{
+    display: block;
+}
+.chuot-computer{
+    position: absolute;
+    background-color: #eeeded;
+    align-items: center;
+    justify-content: center;
+    top: 100%;
+    transform: translateX(0%);
+    padding: 2px;
+    border-radius: 10px;
+    display: none;
+}
+.chuot-computer ul li{
+    border-radius: 7px;
+}
+.chuot-computer ul li a:hover{
+    color: #ff0000;
+}
+.chuot-computer ul{
+    list-style: none;
+    text-align: left;
+}
+.computer-menu nav ul li:hover .chuot-computer{
+    display: block;
+}
+/* ................................................................ */
+/* ................................................................ */
+li{
+    list-style: none;
+}
+.slide{
+    padding: 120px 0px;
+    height: 2000px;
+    background-color: #eae4c2;
+}
+.slide--hinh{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.silde-content-trai-bottom ul{
+    border-radius: 7px;
+    display: flex;
+    background-color: #f4ed92;
+}
+.silde-content-trai-bottom ul li a{
+    margin: 0px 25px;
+    
+}
+.silde-content-trai-bottom ul li:hover{
+    background-color: rgba(56, 56, 56, 0.2);
+}
+.silde-content-trai-bottom ul li{
+    padding: 10px 0px;
+    border-radius: 7px;
+    transition: all 0.4s ease;
+    position: relative;
+}
+.silde-content-trai-bottom ul li::before{
+    display: block;
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 1px;
+    background-color: #585858;
+    transform: translateY(-20%);
+}
+.silde-content-trai-max{
+    position: relative;
+    overflow: hidden;/* cho phép ẩn những phần tử tràn ra ngoài hộp chứa nó*/
+}
+.silde-content-trai-top{
+    position: relative;
+}
+.silde-content-trai-top a img{
+    border-radius: 10px;
+}
+.slide-content-phai ul li a img{
+    display: block;
+    border-radius: 7px;
+}
+.silde-content-trai-top{
+    width: 914px;
+}
+.silde-content-trai-top-arrow a:nth-child(1){
+    position: absolute;
+    top: 300px;
+    transform: translate(2165%, -230%);
+    font-size: 30px;
+}
+.silde-content-trai-top-arrow a:nth-child(2){
+    position: absolute;
+    top: 300px;
+    transform: translate(0%, -230%);
+    font-size: 30px;
+}
+.silde-content-trai-top-arrow a:nth-child(1) i{
+    width: 40px;
+    height: 50px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    opacity: 0;/*Độ trong suốt của phần tử*/
+}
+.silde-content-trai-top{
+    display: flex;
+}
+.silde-content-trai-top-arrow a:nth-child(2) i{
+    width: 40px;
+    height: 50px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    opacity: 0;
+}
+.silde-content-trai-max:hover .silde-content-trai-top-arrow a i {/*khi đưa chuột vào thẻ có class là silde-content-trai-top thì thẻ có class là .silde-content-trai-top-arrow sẽ bị ảnh hưởng*/
+    opacity: 1;/*độ trong suốt trở về mặc định*/
+}
+.silde-content-trai-top-arrow a:nth-child(1) i:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.silde-content-trai-top-arrow a:nth-child(2) i:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
