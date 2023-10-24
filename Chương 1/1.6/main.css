@@ -240,7 +240,7 @@ header {
     transition: var(--smooth);
 }
 
-.banner__socials a img:hover {
+.banner__socials a i:hover {
     color: var(--green-l);
     transition: var(--smooth);
 }
