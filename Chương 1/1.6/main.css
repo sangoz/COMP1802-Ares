@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin-: 25px;
 }
 
 html {
@@ -379,7 +380,13 @@ header {
     justify-content: space-evenly;
 }
 
+.footer__addres a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
 .footer__contact a {
     text-decoration: none;
     color: var(--gray);
+    padding: 1rem;
 }
