@@ -1,0 +1,32 @@
+form {
+    background-color: #eee;
+    display: inline-block;
+    /* De lam gi? */
+}
+form span {
+    display: inline-block;
+    width: 80px;
+    background: #eee;
+    /* Co che? */
+    margin: 10px 3px 3px 8px;
+}
+form input, form select {
+    width: 150px;
+    height: 20px;
+    margin: 0px 5px;
+    box-sizing: border-box; 
+    /* Xac dinh kich thuoc block? */
+}
+form select {
+    margin-top: 10px;
+    margin-left: 5px;
+    /* left: dich block qua phai */
+}
+/* CHU Y CACH GOI a specific ATTRIBUTE TRONG ELEMENT */
+form input [type="submit"]{
+    display: block;
+    /* Vi dang block nen ko sai align- duoc */
+    margin: 10px 0px 12px 98px;
+    width: 80px;
+    height: 30px;
+}
