@@ -390,3 +390,13 @@ header {
     color: var(--gray);
     padding: 1rem;
 }
+
+.footer__contact a:hover{
+    color: var(--green-l);
+    transition: var(--smooth);
+}
+
+.footer__addres a:hover{
+    color: var(--green-l);
+    transition: var(--smooth);
+}
