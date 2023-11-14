@@ -37,5 +37,4 @@ click5.addEventListener("click",function(){
    document.querySelector('.anh2').style.display="none";
    document.querySelector('.anh3').style.display="none";
    document.querySelector('.anh4').style.display="none";
-})  
- 
+}) 
