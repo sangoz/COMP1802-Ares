@@ -1,7 +1,9 @@
-body div{
-    max-width: 1350px;
-    max-height: 640px;
-}
+html, body{
+    height: 100%;
+    width:100%;
+    overflow: hidden;
+    margin: 0;
+  }
 li{
     list-style: none;
 }
