@@ -4,6 +4,15 @@ html, body{
     overflow: hidden;
     margin: 0;
   }
+html{
+    font-size: 100%;
+}
+#animal {
+    height: 100%;
+    width:100%;
+    overflow: hidden;
+    margin: 0;
+}
 li{
     list-style: none;
 }
@@ -83,42 +92,47 @@ nav div .ul{
 }
 
 
+
+/* Trung */
 /* Animation con cua */
 #cua{
     position: relative;
     width: 270px;
-    z-index: 999;
+    top: 500px;
+    z-index: 200;
     animation-name: cua;
-    animation-duration: 30s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: normal;
 }
 @keyframes cua {
+    
     0%{
         transform: translateX(0px);
     }
     25%{
-        transform: translateX(240%);
+        transform: translateX(1rem);
     }
     50%{
-        transform: translateY(300px);
+        transform: translateX(700px);
     }
     75%{
-        transform: translateX(100%);
+        transform: translateX(1300px);
     }
     100%{
-        transform: translate3d(240%,300px,0px);
+        transform: translateX(150px);
     }
 }
 
 /* Animation con muc */
 #muc{
     position: relative;
-    width: 500px;
+    width: 250px;
+    top: 70px;
     z-index: 999;
     animation-name: muc;
-    animation-duration: 40s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
@@ -131,10 +145,10 @@ nav div .ul{
         transform: translateX(100%);
     }
     50%{
-        transform: translate3d(240%,-100px,0px);
+        transform: translateY(250px);
     }
     75%{
-        transform: translate3d(0%,-200px,0px);
+        transform: translateY(400px);
     }
     100%{
         transform: translate3d(240%,0%,0px);
@@ -142,6 +156,9 @@ nav div .ul{
 }
 
 
+
+
+/* Vy */
 /* Animation con camap */
 #camap{
     position: relative;
@@ -200,7 +217,10 @@ nav div .ul{
     }
 }
 
-/* Animation con rua */
+
+
+/* Nhung */
+/* Animation conrua */
 #rua{
     position: relative;
     width: 250px;
@@ -229,18 +249,18 @@ nav div .ul{
     }
 }
 
-/* Animation con ca */
-#ca{
+/* Animation botkhi */
+#botkhi{
     position: relative;
     width: 250px;
     z-index: 999;
-    animation-name: ca;
+    animation-name: botkhi;
     animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
 }
-@keyframes ca {
+@keyframes botkhi {
     0%{
         transform: translateX(0%);
     }
