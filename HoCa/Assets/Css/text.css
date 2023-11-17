@@ -1,9 +1,10 @@
 html, body{
+    position: absolute;
     height: 100%;
     width:100%;
     overflow: hidden;
     margin: 0;
-  }
+}
 html{
     font-size: 100%;
 }
@@ -93,73 +94,109 @@ nav div .ul{
 
 
 
-/* Trung */
-/* Animation con cua */
+
 #cua{
     position: relative;
-    width: 270px;
-    top: 500px;
+    width: 100px;
     z-index: 200;
     animation-name: cua;
-    animation-duration: 5s;
+    animation-duration: 40s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: normal;
     animation-timing-function: normal;
+    
 }
 @keyframes cua {
-    
     0%{
-        transform: translateX(0px);
+        left: 0px; top: 30rem;
     }
-    25%{
-        transform: translateX(1rem);
+    10%{
+        left: 800px; top: 30rem;
+    }
+    12%{
+        left: 500px; top: 30rem;
+        transform: rotateY(0deg);
+    }
+    17%{
+        left: 1300px; top: 30rem;
+        transform: rotateY(0deg);
+    }
+    20%{
+        left: 1500px; top: 30rem;
+        transform: rotateY(0deg);
     }
     50%{
-        transform: translateX(700px);
+        left: 1500px; top: 30rem;
+        transform: rotateY(180deg);
+    }
+    70%{
+        left: 500px; top: 30rem;
+        transform: rotateY(180deg);
     }
     75%{
-        transform: translateX(1300px);
+        left: 800px; top: 30rem;
+        transform: rotateY(180deg);
+    }
+    95%{
+        left: 0px; top: 30rem;
+        transform: rotateY(180deg);
     }
     100%{
-        transform: translateX(150px);
+        left: 0px; top: 30rem;
     }
+
+
 }
 
-/* Animation con muc */
 #muc{
     position: relative;
-    width: 250px;
-    top: 70px;
-    z-index: 999;
+    width: 150px;
     animation-name: muc;
-    animation-duration: 20s;
+    animation-duration: 40s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-timing-function: normal;
 }
 @keyframes muc {
     0%{
-        transform: translateX(0px);
+        top: 500px; left: 0px;
+    }
+    10%{
+        top: 0px; left: 0px;
     }
     25%{
-        transform: translateX(100%);
+        top: 0px; left: 0px;
+        transform: rotateZ(90deg);
+    }
+    35%{
+        top: 0px; left: 1200px;
+        transform: rotateZ(90deg);
     }
     50%{
-        transform: translateY(250px);
+        top: 0px; left: 1200px;
+        transform: rotateZ(180deg);
+    }
+    60%{
+        top: 500px; left: 1200px;
+        transform: rotateZ(180deg);
     }
     75%{
-        transform: translateY(400px);
+        top: 500px; left: 1200px;
+        transform: rotateZ(270deg);
+    }
+    85%{
+        top: 500px; left: 0px;
+        transform: rotateZ(270deg);
     }
     100%{
-        transform: translate3d(240%,0%,0px);
+        top: 500px; left: 0px;
     }
-}
+} 
 
 
 
 
-/* Vy */
-/* Animation con camap */
+/*
 #camap{
     position: relative;
     width: 250px;
@@ -188,7 +225,7 @@ nav div .ul{
     }
 }
 
-/* Animation bachtuoc */
+
 #bachtuoc{
     position: relative;
     width: 250px;
@@ -218,62 +255,93 @@ nav div .ul{
 }
 
 
+*/
 
-/* Nhung */
-/* Animation conrua */
 #rua{
     position: relative;
-    width: 250px;
-    z-index: 999;
+    width: 200px;
     animation-name: rua;
-    animation-duration: 20s;
+    animation-duration: 100s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-timing-function: normal;
 }
 @keyframes rua {
     0%{
-        transform: translateX(0%);
+        left: 0px; top: 400px;
     }
-    25%{
-        transform: translate3d(300%,0px,0px);
+    18%{
+        left: 1000px; top: 0px;
     }
-    50%{
-        transform: translate3d(350%,-400px,0px);
+    40%{
+        left: 1000px; top: 0px;
+        transform: rotateZ(90deg);
+    }
+    55%{
+        left: 1000px; top: 500px;
+        transform: rotateZ(90deg);
     }
     75%{
-        transform: translate3d(200%,-300px,0px);
+        left: 1000px; top: 500px;
+        transform: rotateY(180deg);
+    }
+    90%{
+        left: 0px; top: 400px;
+        transform: rotateY(180deg);
     }
     100%{
-        transform: translate3d(100%,-100px,0px);
+        left: 0px; top: 400px;
     }
 }
 
-/* Animation botkhi */
+
+
 #botkhi{
-    position: relative;
-    width: 250px;
-    z-index: 999;
+    z-index: 200;
+    top: 300px;
+    position: absolute;
+    width: 100px;
+    animation-duration: 5s;
     animation-name: botkhi;
-    animation-duration: 30s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
 }
-@keyframes botkhi {
-    0%{
-        transform: translateX(0%);
-    }
-    25%{
-        transform: translate3d(100%,-400px,0px);
-    }
-    50%{
-        transform: translate3d(150%,-200px,0px);
-    }
-    75%{
-        transform: translate3d(300%,-400px,0px);
-    }
-    100%{
-        transform: translate3d(100%,-200px,0px);
-    }
+@keyframes botkhi{
+    0%{left: 0px; top: 500px;}
+    100%{left: 0px; top: 0px;}
 }
+#botkhi2{
+    z-index: 200;
+    top: 300px;
+    position: absolute;
+    width: 100px;
+    animation-duration: 5s;
+    animation-name: botkhi2;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+}
+@keyframes botkhi2{
+    0%{left: 1300px; top: 500px;}
+    100%{left: 1300px; top: 0px;}
+}
+
+    /* from{left: 300px; top: 300px;}
+    to{left: 300px; top: 0px;} */
+
+/* #botkhi2 img{
+    left: 0px;
+    top: 300px;
+    width: 100px;
+}
+#botkhi2{
+    position: absolute;
+    top: 1000px;
+    width: 100px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+} */
+
