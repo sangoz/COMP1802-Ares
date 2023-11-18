@@ -1,0 +1,347 @@
+html, body{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    overflow: hidden;
+    margin: 0;
+}
+html{
+    font-size: 100%;
+}
+#animal {
+    height: 100%;
+    width:100%;
+    overflow: hidden;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.nennen,div img{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+.hoca .hoconca nav .menu ul{
+    position: relative;
+    top: 0px;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    z-index: 1010;
+    text-align: left;
+} 
+
+.menu ul li{
+    padding: 20px 40px;
+    transition: all 0.35s ease;
+    border-radius: 15px;
+}
+.menu ul li a{
+    margin: 0 30px;
+}
+.menu ul li:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+.nav{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+nav div .ul{
+    display: flex;
+}
+.dautien{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: translateX(0%);
+    top: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    border-radius: 10px;
+    display: none;
+    z-index: 1010;
+}
+
+.thuhai{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: translateX(0%);
+    top: 100%;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    display: none;
+    z-index: 1010;
+}
+
+.hoconca nav .menu ul li:nth-child(1):hover .dautien{
+    display: block;
+}
+.hoconca nav .menu ul li:nth-child(2):hover .thuhai{
+    display: block;
+}
+.loa .thuhai ul li audio source{
+    z-index: 1111;
+}
+
+
+
+
+#cua{
+    position: relative;
+    width: 100px;
+    z-index: 200;
+    animation-name: cua;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: normal;
+    
+}
+@keyframes cua {
+    0%{
+        left: 0px; top: 30rem;
+    }
+    10%{
+        left: 800px; top: 30rem;
+    }
+    12%{
+        left: 500px; top: 30rem;
+        transform: rotateY(0deg);
+    }
+    17%{
+        left: 1300px; top: 30rem;
+        transform: rotateY(0deg);
+    }
+    20%{
+        left: 1500px; top: 30rem;
+        transform: rotateY(0deg);
+    }
+    50%{
+        left: 1500px; top: 30rem;
+        transform: rotateY(180deg);
+    }
+    70%{
+        left: 500px; top: 30rem;
+        transform: rotateY(180deg);
+    }
+    75%{
+        left: 800px; top: 30rem;
+        transform: rotateY(180deg);
+    }
+    95%{
+        left: 0px; top: 30rem;
+        transform: rotateY(180deg);
+    }
+    100%{
+        left: 0px; top: 30rem;
+    }
+
+
+}
+
+#muc{
+    position: relative;
+    width: 150px;
+    animation-name: muc;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: normal;
+}
+@keyframes muc {
+    0%{
+        top: 500px; left: 0px;
+    }
+    10%{
+        top: 0px; left: 0px;
+    }
+    25%{
+        top: 0px; left: 0px;
+        transform: rotateZ(90deg);
+    }
+    35%{
+        top: 0px; left: 1200px;
+        transform: rotateZ(90deg);
+    }
+    50%{
+        top: 0px; left: 1200px;
+        transform: rotateZ(180deg);
+    }
+    60%{
+        top: 500px; left: 1200px;
+        transform: rotateZ(180deg);
+    }
+    75%{
+        top: 500px; left: 1200px;
+        transform: rotateZ(270deg);
+    }
+    85%{
+        top: 500px; left: 0px;
+        transform: rotateZ(270deg);
+    }
+    100%{
+        top: 500px; left: 0px;
+    }
+} 
+
+
+
+
+/*
+#camap{
+    position: relative;
+    width: 250px;
+    z-index: 999;
+    animation-name: camap;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes camap {
+    0%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translate3d(100%,-420px,0px);
+    }
+    50%{
+        transform: translate3d(250%,70px,0px);
+    }
+    75%{
+        transform: translate3d(400%,-400px,0px);
+    }
+    100%{
+        transform: translate3d(410%,-100px,0px);
+    }
+}
+
+
+#bachtuoc{
+    position: relative;
+    width: 250px;
+    z-index: 999;
+    animation-name: bachtuoc;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes bachtuoc{
+    0%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translate3d(300%,-420px,0px);
+    }
+    50%{
+        transform: translate3d(350%,0px,0px);
+    }
+    75%{
+        transform: translate3d(200%,-300px,0px);
+    }
+    100%{
+        transform: translate3d(310%,-100px,0px);
+    }
+}
+
+
+*/
+
+#rua{
+    position: relative;
+    width: 200px;
+    animation-name: rua;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: normal;
+}
+@keyframes rua {
+    0%{
+        left: 0px; top: 400px;
+    }
+    18%{
+        left: 1000px; top: 0px;
+    }
+    40%{
+        left: 1000px; top: 0px;
+        transform: rotateZ(90deg);
+    }
+    55%{
+        left: 1000px; top: 500px;
+        transform: rotateZ(90deg);
+    }
+    75%{
+        left: 1000px; top: 500px;
+        transform: rotateY(180deg);
+    }
+    90%{
+        left: 0px; top: 400px;
+        transform: rotateY(180deg);
+    }
+    100%{
+        left: 0px; top: 400px;
+    }
+}
+
+
+
+#botkhi{
+    z-index: 200;
+    top: 300px;
+    position: absolute;
+    width: 100px;
+    animation-duration: 5s;
+    animation-name: botkhi;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+}
+@keyframes botkhi{
+    0%{left: 0px; top: 500px;}
+    100%{left: 0px; top: 0px;}
+}
+#botkhi2{
+    z-index: 200;
+    top: 300px;
+    position: absolute;
+    width: 100px;
+    animation-duration: 5s;
+    animation-name: botkhi2;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+}
+@keyframes botkhi2{
+    0%{left: 1300px; top: 500px;}
+    100%{left: 1300px; top: 0px;}
+}
+
+    /* from{left: 300px; top: 300px;}
+    to{left: 300px; top: 0px;} */
+
+/* #botkhi2 img{
+    left: 0px;
+    top: 300px;
+    width: 100px;
+}
+#botkhi2{
+    position: absolute;
+    top: 1000px;
+    width: 100px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+} */
+
