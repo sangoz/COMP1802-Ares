@@ -196,66 +196,66 @@ nav div .ul{
 
 
 
-/*
+
 #camap{
-    position: relative;
-    width: 250px;
+    position: absolute;
+    top: 450px;
+    left: -700px;
+    width: 600px;
     z-index: 999;
     animation-name: camap;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
-}
-@keyframes camap {
-    0%{
-        transform: translateX(0%);
-    }
-    25%{
-        transform: translate3d(100%,-420px,0px);
-    }
-    50%{
-        transform: translate3d(250%,70px,0px);
-    }
-    75%{
-        transform: translate3d(400%,-400px,0px);
-    }
-    100%{
-        transform: translate3d(410%,-100px,0px);
-    }
-}
-
-
-#bachtuoc{
-    position: relative;
-    width: 250px;
-    z-index: 999;
-    animation-name: bachtuoc;
     animation-duration: 20s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+    animation-direction:reverse; 
+    animation-timing-function: linear;
+}
+@keyframes camap {
+    0% {
+    opacity: 0.5;   
+    }
+    80% {
+    opacity: 1;
+    }
+    100% {
+    transform: translateX(2100px);
+    opacity: 1;
+    }
+}
+
+#bachtuoc{
+    position: absolute;
+    width: 500px;
+    bottom: 100%;
+    left: -200px;
+    z-index: 9;
+    animation-name: bachtuoc;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function: ease-in-out ;
 }
 @keyframes bachtuoc{
     0%{
         transform: translateX(0%);
     }
     25%{
-        transform: translate3d(300%,-420px,0px);
+        transform: translate3d(300%,0px,0px);
     }
     50%{
-        transform: translate3d(350%,0px,0px);
+        transform: translate3d(0%, -100px,0px);
     }
     75%{
-        transform: translate3d(200%,-300px,0px);
+        transform: translate3d(300%, 0px,0px);
     }
     100%{
-        transform: translate3d(310%,-100px,0px);
+        transform: translate3d(0%,-100px,0px);
+        opacity: 0.8;
     }
 }
 
 
-*/
+
+
 
 #rua{
     position: relative;
